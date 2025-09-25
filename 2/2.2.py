@@ -455,8 +455,8 @@ def run_pipeline_from_file(json_path: str, save_output: bool = True):
 # CLI / пример использования
 # --------------------------
 if __name__ == '__main__':
-    # Пример 1: если у вас уже есть members.json — используйте его
-    example_json = 'members.json'  # замените на свой файл
+    # Пример 1: если уже есть members.json 
+    example_json = 'members.json'
     if os.path.exists(example_json):
         print("Запуск pipeline по файлу:", example_json)
         results = run_pipeline_from_file(example_json)
@@ -472,9 +472,9 @@ if __name__ == '__main__':
             print("Accuracy:", results['classifier']['accuracy'])
             print("Classification report:\n", results['classifier']['report_text'])
     else:
-        # Пример 2: загрузка напрямую из VK (включите токен и group_id)
-        token = '05bfc8d7d35'
-        group_id = 'sdtrussia'  # замените при необходимости
+        # Пример 2: загрузка напрямую из VK
+        token = '05bfc8d7d35' # заменить на свой
+        group_id = 'sdtrussia'
         if token.startswith('<'):
             print("Файл members.json не найден. Чтобы скачать из VK, укажите реальный token в коде.")
         else:
