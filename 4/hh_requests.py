@@ -93,12 +93,11 @@ if __name__ == "__main__":
     parser = HHParser()
     
     search_queries = [
-        "Python разработчик",
-        "Java разработчик",
-        "JavaScript разработчик",
-        "C++ разработчик",
         "Data Scientist",
-        "Программист"
+        "ML Engineer",
+        "Системный аналитик",
+        "Программист",
+        "Разработчик"
     ]
     
     all_vacancies_data = []
