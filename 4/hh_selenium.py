@@ -114,12 +114,12 @@ def main():
     
     try:
         search_queries = [
-            "Python разработчик",
-            "Java разработчик",
-            "JavaScript разработчик", 
-            "C++ разработчик",
-            "Data Scientist"
-        ]
+        "Data Scientist",
+        "ML Engineer",
+        "Системный аналитик",
+        "Программист",
+        "Разработчик"
+    ]
         
         all_vacancies = parser.search_vacancies(search_queries, pages_per_query=3)
         
